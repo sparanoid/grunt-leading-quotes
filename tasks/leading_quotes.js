@@ -27,6 +27,8 @@ module.exports = function(grunt) {
     });
 
     this.files.forEach(function(filePair) {
+      var matched;
+
       // check that the source file exists
       if(filePair.src.length === 0) { return; }
 
@@ -51,6 +53,8 @@ module.exports = function(grunt) {
         var regex = options.regex;
 
         if (firstLetter.match(regex)) {
+          matched = true;
+
           // show verbose log if enabled
           if (options.verbose) {
             grunt.log.writeln(('found: ').cyan + para);
@@ -68,6 +72,10 @@ module.exports = function(grunt) {
 
       var html = $.html();
       grunt.file.write(path.resolve(filePair.dest), html);
+
+      if (matched) {
+        grunt.log.writeln(('Created: ').green + path.resolve(filePair.dest));
+      }
     });
   });
 };
