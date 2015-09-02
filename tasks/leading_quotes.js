@@ -31,7 +31,9 @@ module.exports = function(grunt) {
       if(filePair.src.length === 0) { return; }
 
       // init cheerio
-      var $ = cheerio.load(grunt.file.read(filePair.src));
+      var $ = cheerio.load(grunt.file.read(filePair.src), {
+        decodeEntities: false
+      });
 
       grunt.log.writeln(('Reading: ').green + path.resolve(filePair.src.toString()));
 
