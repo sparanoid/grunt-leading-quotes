@@ -44,12 +44,8 @@
   },
   "keywords": [
     "gruntplugin",
-    "embed",
-    "stylesheet",
-    "javascript",
-    "css",
-    "js",
-    "svg"
+    "html",
+    "js"
   ],
   "contributors": []
 }
