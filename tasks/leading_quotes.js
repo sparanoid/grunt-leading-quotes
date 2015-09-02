@@ -74,7 +74,7 @@ module.exports = function(grunt) {
       grunt.file.write(path.resolve(filePair.dest), html);
 
       if (matched) {
-        grunt.log.writeln(('Created: ').green + path.resolve(filePair.dest));
+        grunt.log.writeln(('Created: ').green + path.resolve(filePair.dest) + '\n');
       }
     });
   });
