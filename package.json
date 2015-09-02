@@ -1,7 +1,7 @@
 {
   "name": "grunt-leading-quotes",
-  "description": "A grunt task which takes a html file, finds all the css, js links and images, and outputs a version with all the css, js and images (Base64) written inline.",
-  "version": "0.1.9",
+  "description": "A grunt task which adds CSS classes for paragraphs with leading quotes in HTML",
+  "version": "0.0.0",
   "homepage": "https://github.com/sparanoid/grunt-leading-quotes",
   "author": {
     "name": "Tunghsiao Liu",
