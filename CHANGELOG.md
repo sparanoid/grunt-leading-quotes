@@ -1,3 +1,13 @@
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.4...v0.0.5) (2015-09-02)
+
+
+### Bug Fixes
+
+* missing matched item output ([494dd8c](https://github.com/sparanoid/grunt-leading-quotes/commit/494dd8c))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.3...v0.0.4) (2015-09-02)
 
