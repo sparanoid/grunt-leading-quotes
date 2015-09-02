@@ -23,10 +23,12 @@ module.exports = function(grunt) {
       ignoreClass: 'no-lq',
       addStyle: false,
       addStyleOffset: '-.4em',
-      verbose: false
+      verbose: true
     });
 
     this.files.forEach(function(filePair) {
+      var counter = 0;
+
       // check that the source file exists
       if(filePair.src.length === 0) { return; }
 
@@ -35,7 +37,10 @@ module.exports = function(grunt) {
         decodeEntities: false
       });
 
-      grunt.log.writeln(('Reading: ').green + path.resolve(filePair.src.toString()));
+      // show verbose log if enabled
+      if (options.verbose) {
+        grunt.log.writeln(('Reading: ').green + path.resolve(filePair.src.toString()));
+      }
 
       $(options.elements).each(function() {
         var para = $(this);
@@ -54,6 +59,9 @@ module.exports = function(grunt) {
 
         if (firstLetter.match(regex)) {
 
+          // bump counter for summary
+          counter++;
+
           // show verbose log if enabled
           if (options.verbose) {
             grunt.log.writeln(('  found: ').cyan + para);
@@ -71,7 +79,14 @@ module.exports = function(grunt) {
 
       var html = $.html();
       grunt.file.write(path.resolve(filePair.dest), html);
-      grunt.log.writeln(('Created: ').green + path.resolve(filePair.dest) + '\n');
+
+      // show verbose log if enabled
+      if (options.verbose) {
+        grunt.log.writeln(('Created: ').green + path.resolve(filePair.dest));
+      }
+
+      // show match summary
+      grunt.log.writeln(('  Added: ').green + counter + '\n');
     });
   });
 };
