@@ -1,3 +1,13 @@
+<a name="0.0.1"></a>
+## 0.0.1 (2015-09-02)
+
+
+### Features
+
+* init repo ([700b055](https://github.com/sparanoid/grunt-leading-quotes/commit/700b055))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.1.8...v0.1.9) (2015-09-01)
 
