@@ -35,7 +35,7 @@ grunt.initConfig({
       ignoreClass: 'no-lq',
       addStyle: false,
       addStyleOffset: '-.4em',
-      verbose: false
+      verbose: true
     },
     all: {
       files: {
@@ -189,7 +189,7 @@ Result:
 #### verbose
 
 Type: `Boolean`
-Default: `false`
+Default: `true`
 
 Verbose logging.
 
