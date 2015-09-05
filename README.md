@@ -1,5 +1,7 @@
 # grunt-leading-quotes
 [![Build Status](https://api.travis-ci.org/sparanoid/grunt-leading-quotes.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-leading-quotes)
+[![npm Version](https://img.shields.io/npm/v/grunt-leading-quotes.svg)](https://www.npmjs.com/package/grunt-leading-quotes)
+[![npm Downloads](https://img.shields.io/npm/dm/grunt-leading-quotes.svg)](https://www.npmjs.com/package/grunt-leading-quotes)
 
 > A grunt task which adds CSS classes for paragraphs with leading quotes in HTML
 
