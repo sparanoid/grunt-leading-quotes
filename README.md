@@ -190,7 +190,7 @@ Result:
 
 #### verbose
 
-Type: `Boolean`
+Type: `Boolean` 
 Default: `true`
 
 Verbose logging.
