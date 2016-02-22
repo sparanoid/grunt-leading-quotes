@@ -1,3 +1,13 @@
+<a name="0.0.7"></a>
+## [0.0.7](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.6...v0.0.7) (2016-02-22)
+
+
+### Bug Fixes
+
+* **docs:** missing leading quotes ([a48ea04](https://github.com/sparanoid/grunt-leading-quotes/commit/a48ea04))
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.5...v0.0.6) (2015-09-02)
 
