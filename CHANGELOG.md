@@ -1,3 +1,14 @@
+<a name="0.0.9"></a>
+## [0.0.9](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.8...v0.0.9) (2016-03-17)
+
+
+### Bug Fixes
+
+* detect children to avoid wrong text ([b6c15d6](https://github.com/sparanoid/grunt-leading-quotes/commit/b6c15d6))
+* **travis:** update test ([081da39](https://github.com/sparanoid/grunt-leading-quotes/commit/081da39))
+
+
+
 <a name="0.0.8"></a>
 ## [0.0.8](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.7...v0.0.8) (2016-03-17)
 
