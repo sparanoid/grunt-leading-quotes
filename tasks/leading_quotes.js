@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
     var options = this.options({
       elements: '*',
-      regex: /「|『|“|‘/,
+      regex: /「|『|“|‘|（/,
       class: 'leading-indent-fix',
       ignoreClass: 'no-lq',
       addStyle: false,
@@ -70,6 +70,19 @@ module.exports = function(grunt) {
 
           // add class for matched term
           para.addClass(options.class);
+
+          // add type class based on characters
+          if (firstLetter === '“') {
+            para.addClass(options.class + '--double-quotes');
+          } else if (firstLetter === '‘') {
+            para.addClass(options.class + '--single-quotes');
+          } else if (firstLetter === '「') {
+            para.addClass(options.class + '--chinese-corner-bracket');
+          } else if (firstLetter === '『') {
+            para.addClass(options.class + '--chinese-white-corner-bracket');
+          } else if (firstLetter === '（') {
+            para.addClass(options.class + '--fullwidth-parenthesis');
+          }
 
           // auto style if enabled
           if (options.addStyle) {

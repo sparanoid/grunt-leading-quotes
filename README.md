@@ -32,7 +32,7 @@ grunt.initConfig({
   leading_quotes: {
     options: {
       elements: '*',
-      regex: /「|『|“|‘/,
+      regex: /「|『|“|‘|（/,
       class: 'leading-indent-fix',
       ignoreClass: 'no-lq',
       addStyle: false,
@@ -75,7 +75,7 @@ grunt.initConfig({
 #### regex
 
 Type: `String`
-Default: `/「|『|“|‘/`
+Default: `/「|『|“|‘|（/`
 
 Symbols to test, in regex format.
 
@@ -84,7 +84,7 @@ grunt.initConfig({
   leading_quotes: {
     all: {
       options: {
-        regex: /「|『|“|‘|（/
+        regex: /“|‘/
       },
       files: {
         'dest-index.html': 'source-index.html',
