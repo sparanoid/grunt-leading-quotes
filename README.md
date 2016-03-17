@@ -31,7 +31,7 @@ In your project's Gruntfile, add a section named `leading_quotes` to the data ob
 grunt.initConfig({
   leading_quotes: {
     options: {
-      elements: '*',
+      elements: 'h1, h2, h3, h4, h5, h6, li, p',
       regex: /「|『|“|‘|（/,
       class: 'leading-indent-fix',
       ignoreClass: 'no-lq',
@@ -53,7 +53,7 @@ grunt.initConfig({
 #### elements
 
 Type: `String`
-Default: `'*'`
+Default: `'h1, h2, h3, h4, h5, h6, li, p'`
 
 Elements to check, you can define multiple elements by comma-separated values.
 
