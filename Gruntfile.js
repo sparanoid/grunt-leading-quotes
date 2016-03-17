@@ -2,7 +2,7 @@
  * grunt-leading-quotes
  * https://github.com/sparanoid/grunt-leading-quotes
  *
- * Copyright (c) 2015 Tunghsiao Liu
+ * Copyright (c) 2016 Tunghsiao Liu
  * Licensed under the MIT license.
  */
 
