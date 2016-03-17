@@ -15,6 +15,7 @@
   <body>
     <h1>grunt-leading-quotes</h1>
 
+    <h1 class="lq-fix"><a href="#" class="lq-fix">“This should be replaced.”<span class="test-empty-element"> </span></a></h1>
     <h1 class="lq-fix">“This should be replaced.”</h1>
     <h2 class="lq-fix">“This should be replaced.”</h2>
     <p class="lq-fix">“This should be replaced.”</p>
@@ -31,10 +32,22 @@
 
     <ul>
       <li class="lq-fix">“This should be replaced.”</li>
-      <li class="lq-fix">“This should be replaced.”</li>
+      <li class="lq-fix">
+        “This should be replaced.”
+        <ul>
+          <li>This should not be replaced.</li>
+          <li class="lq-fix">“This should be replaced.”</li>
+        </ul>
+      </li>
       <li class="lq-fix">“This should be replaced.”</li>
       <li>This should not be replaced.</li>
-      <li>This should not be replaced.</li>
+      <li>
+        This should not be replaced.
+        <ul>
+          <li>This should not be replaced.</li>
+          <li class="lq-fix">“This should be replaced.”</li>
+        </ul>
+      </li>
       <li>This should not be replaced.</li>
     </ul>
 
