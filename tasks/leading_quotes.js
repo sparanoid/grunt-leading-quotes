@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         }
 
         // get first letter
-        var firstLetter = para.clone().children().remove().end().text().trim().charAt(0);
+        var firstLetter = para.text().trim().charAt(0);
 
         // get regex for comparing
         var regex = options.regex;
