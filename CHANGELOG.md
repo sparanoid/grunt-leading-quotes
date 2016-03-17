@@ -1,3 +1,14 @@
+<a name="0.0.11"></a>
+## [0.0.11](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.10...v0.0.11) (2016-03-17)
+
+
+### Features
+
+* add character type support ([f8e00b8](https://github.com/sparanoid/grunt-leading-quotes/commit/f8e00b8))
+* update `elements` default ([27457e6](https://github.com/sparanoid/grunt-leading-quotes/commit/27457e6))
+
+
+
 <a name="0.0.10"></a>
 ## [0.0.10](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.9...v0.0.10) (2016-03-17)
 
