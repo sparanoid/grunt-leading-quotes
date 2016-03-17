@@ -7,22 +7,41 @@
     <style>
     body {
       margin: 20px;
+      font-family: 'Helvetica Neue', 'Hiragino Sans GB', Arial, sans-serif;
       border: 1px solid rgba(0, 0, 0, .5);
     }
+
+    .leading-indent-fix { text-indent: -.39em; background: #d9e6d9; }
+    .leading-indent-fix--double-quotes { text-indent: -.43em; }
+    .leading-indent-fix--single-quotes { text-indent: -.28em; }
+    .leading-indent-fix--chinese-corner-bracket { text-indent: -.68em; }
+    .leading-indent-fix--chinese-white-corner-bracket { text-indent: -.62em; }
+    .leading-indent-fix--fullwidth-parenthesis { text-indent: -.68em; }
     </style>
   </head>
 
   <body>
     <h1>grunt-leading-quotes</h1>
 
-    <h1 class="leading-indent-fix"><a href="#" class="leading-indent-fix">“This should be replaced.”<span class="test-empty-element"> </span></a></h1>
-    <h1 class="leading-indent-fix">“This should be replaced.”</h1>
-    <h2 class="leading-indent-fix">“This should be replaced.”</h2>
-    <p class="leading-indent-fix">“This should be replaced.”</p>
-    <p class="leading-indent-fix">“This should be replaced.”</p>
-    <p class="leading-indent-fix">“I no understand”, he says to the room in general.</p>
-    <p class="leading-indent-fix">「名词成灾」的流行病里，灾情最严重的该是所谓「科学至上」（scientism）。在现代的工业社会里，科学早成显贵，科技更是骄子，所以知识分子的口头与笔下，有意无意，总爱用一些「学术化」的抽象名词，好显得客观而精确。有人称之为「伪术语」（pseudo-jargon）。例如：明明是 first step，却要说成 initial phase：明明是 letter，却要说成 communication，都属此类。</p>
-    <p class="leading-indent-fix">『雪国』の主な舞台は、上越国境の清水トンネルを抜けた湯沢温泉であるが、この作品も『伊豆の踊子』同様に、川端康成の旅の出会いから生まれたもので、雪中の火事も実際に起ったことだと川端は語っている。川端は作品内で故意に地名を隠しているが、1934 年（昭和 9 年）6 月 13 日より 1937 年まで新潟県湯沢町の高半旅館（現：高半ホテル）に逗留していたことを随筆『「雪国」の旅』で述べている。</p>
+    <h1 class="leading-indent-fix leading-indent-fix--single-quotes"><a href="#">‘This’ should be replaced</a> <a href="#" class="external"><span class="dot"> </span></a></h1>
+    <h1 class="leading-indent-fix leading-indent-fix--double-quotes"><a href="#">“This should be replaced.”<span class="test-empty-element"> </span></a></h1>
+    <h1 class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</h1>
+    <h1 class="leading-indent-fix leading-indent-fix--single-quotes">‘This should be replaced.’</h1>
+    <h1 class="leading-indent-fix leading-indent-fix--chinese-corner-bracket">「This should be replaced.」</h1>
+    <h1 class="leading-indent-fix leading-indent-fix--chinese-white-corner-bracket">『This should be replaced.』</h1>
+    <h1 class="leading-indent-fix leading-indent-fix--fullwidth-parenthesis">（This should be replaced.）</h1>
+    <h2 class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</h2>
+    <h2 class="leading-indent-fix leading-indent-fix--single-quotes">‘This should be replaced.’</h2>
+    <h2 class="leading-indent-fix leading-indent-fix--chinese-corner-bracket">「This should be replaced.」</h2>
+    <h2 class="leading-indent-fix leading-indent-fix--chinese-white-corner-bracket">『This should be replaced.』</h2>
+    <h2 class="leading-indent-fix leading-indent-fix--fullwidth-parenthesis">（This should be replaced.）</h2>
+    <p class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</p>
+    <p class="leading-indent-fix leading-indent-fix--single-quotes">‘This should be replaced.’</p>
+    <p class="leading-indent-fix leading-indent-fix--chinese-corner-bracket">「This should be replaced.」</p>
+    <p class="leading-indent-fix leading-indent-fix--chinese-white-corner-bracket">『This should be replaced.』</p>
+    <p class="leading-indent-fix leading-indent-fix--fullwidth-parenthesis">（This should be replaced.）</p>
+    <p class="leading-indent-fix leading-indent-fix--chinese-corner-bracket">「名词成灾」的流行病里，灾情最严重的该是所谓「科学至上」（scientism）。在现代的工业社会里，科学早成显贵，科技更是骄子，所以知识分子的口头与笔下，有意无意，总爱用一些「学术化」的抽象名词，好显得客观而精确。有人称之为「伪术语」（pseudo-jargon）。例如：明明是 first step，却要说成 initial phase：明明是 letter，却要说成 communication，都属此类。</p>
+    <p class="leading-indent-fix leading-indent-fix--chinese-white-corner-bracket">『雪国』の主な舞台は、上越国境の清水トンネルを抜けた湯沢温泉であるが、この作品も『伊豆の踊子』同様に、川端康成の旅の出会いから生まれたもので、雪中の火事も実際に起ったことだと川端は語っている。川端は作品内で故意に地名を隠しているが、1934 年（昭和 9 年）6 月 13 日より 1937 年まで新潟県湯沢町の高半旅館（現：高半ホテル）に逗留していたことを随筆『「雪国」の旅』で述べている。</p>
 
     <h1>This should not be replaced.</h1>
     <h2>This should not be replaced.</h2>
@@ -31,21 +50,21 @@
     <p class="no-lq">“This paragraph has <code>no-lq</code> class should not be replaced.”</p>
 
     <ul>
-      <li class="leading-indent-fix">“This should be replaced.”</li>
-      <li class="leading-indent-fix">
+      <li class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</li>
+      <li class="leading-indent-fix leading-indent-fix--double-quotes">
         “This should be replaced.”
         <ul>
           <li>This should not be replaced.</li>
-          <li class="leading-indent-fix">“This should be replaced.”</li>
+          <li class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</li>
         </ul>
       </li>
-      <li class="leading-indent-fix">“This should be replaced.”</li>
+      <li class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</li>
       <li>This should not be replaced.</li>
       <li>
         This should not be replaced.
         <ul>
           <li>This should not be replaced.</li>
-          <li class="leading-indent-fix">“This should be replaced.”</li>
+          <li class="leading-indent-fix leading-indent-fix--double-quotes">“This should be replaced.”</li>
         </ul>
       </li>
       <li>This should not be replaced.</li>
