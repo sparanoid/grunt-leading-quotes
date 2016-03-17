@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
     var options = this.options({
       elements: '*',
-      regex: /「|『|“/,
+      regex: /「|『|“|‘/,
       class: 'leading-indent-fix',
       ignoreClass: 'no-lq',
       addStyle: false,
