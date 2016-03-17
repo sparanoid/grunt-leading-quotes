@@ -1,3 +1,13 @@
+<a name="0.0.10"></a>
+## [0.0.10](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.9...v0.0.10) (2016-03-17)
+
+
+### Features
+
+* update default regex rules ([0682572](https://github.com/sparanoid/grunt-leading-quotes/commit/0682572))
+
+
+
 <a name="0.0.9"></a>
 ## [0.0.9](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.8...v0.0.9) (2016-03-17)
 
