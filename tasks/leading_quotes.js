@@ -17,7 +17,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('leading_quotes', 'Turn your distribution into something pastable.', function() {
 
     var options = this.options({
-      elements: '*',
+      elements: 'h1, h2, h3, h4, h5, h6, li, p',
       regex: /「|『|“|‘|（/,
       class: 'leading-indent-fix',
       ignoreClass: 'no-lq',
@@ -40,7 +40,6 @@ module.exports = function(grunt) {
       $(options.elements).each(function() {
         var para = $(this);
         var ignore = options.ignoreClass;
-        var firstLetter;
 
         // if (parent) element has ignore class
         if (para.hasClass(ignore) || para.parents('.' + ignore).hasClass(ignore)) {
@@ -48,14 +47,7 @@ module.exports = function(grunt) {
         }
 
         // get first letter
-        // if only one child element, remove html tags and parse it as text, if
-        // multiple children exist, parse them individually, see tests for more
-        // info.
-        if (para.children().length === 1) {
-          firstLetter = para.text().trim().charAt(0);
-        } else {
-          firstLetter = para.clone().children().remove().end().text().trim().charAt(0);
-        }
+        var firstLetter = para.text().trim().charAt(0);
 
         // get regex for comparing
         var regex = options.regex;
