@@ -1,7 +1,7 @@
 {
   "name": "grunt-leading-quotes",
   "description": "A grunt task which adds CSS classes for paragraphs with leading quotes in HTML",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "homepage": "https://github.com/sparanoid/grunt-leading-quotes",
   "author": {
     "name": "Tunghsiao Liu",
