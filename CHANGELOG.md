@@ -1,3 +1,13 @@
+<a name="0.0.12"></a>
+## [0.0.12](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.11...v0.0.12) (2016-04-07)
+
+
+### Bug Fixes
+
+* **travis:** avoid deps hard erros ([8bc7f13](https://github.com/sparanoid/grunt-leading-quotes/commit/8bc7f13))
+
+
+
 <a name="0.0.11"></a>
 ## [0.0.11](https://github.com/sparanoid/grunt-leading-quotes/compare/v0.0.10...v0.0.11) (2016-03-17)
 
