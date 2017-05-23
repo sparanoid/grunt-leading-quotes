@@ -1,4 +1,6 @@
 # grunt-leading-quotes
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/grunt-leading-quotes.svg)](https://greenkeeper.io/)
 [![Build Status](https://api.travis-ci.org/sparanoid/grunt-leading-quotes.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-leading-quotes)
 [![npm Version](https://img.shields.io/npm/v/grunt-leading-quotes.svg)](https://www.npmjs.com/package/grunt-leading-quotes)
 [![npm Downloads](https://img.shields.io/npm/dm/grunt-leading-quotes.svg)](https://www.npmjs.com/package/grunt-leading-quotes)
